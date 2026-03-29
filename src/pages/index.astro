@@ -1,0 +1,307 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="GPS-Guided Tour Experiences">
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-content">
+        <h1 class="hero-title">GPS-Guided Experiences for Every City</h1>
+        <p class="hero-subtitle">
+          We build immersive, self-guided tour apps that use GPS navigation,
+          automatic check-ins, and group features to turn any walk into an adventure.
+        </p>
+        <div class="hero-actions">
+          <a href="/for-organizations" class="btn btn-primary">Partner With Us</a>
+          <a href="/how-it-works" class="btn btn-outline">See How It Works</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <img src="/guided-apps-logo.png" alt="Guided Applications" class="hero-logo" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Brands -->
+  <section class="section-alt">
+    <div class="container">
+      <h2 class="section-title reveal">Our Brands</h2>
+      <p class="section-subtitle reveal reveal-delay-1">
+        Each brand delivers a unique guided experience — same powerful platform, different adventures.
+      </p>
+      <div class="brands-grid">
+        <a href="https://patriotpubcrawl.guided-apps.com" target="_blank" rel="noopener" class="brand-card reveal reveal-delay-1">
+          <div class="brand-icon">🍺</div>
+          <h3>Patriot Pub Crawl</h3>
+          <p>Boston's Freedom Trail meets its best pubs, restaurants, and landmarks. Our flagship experience.</p>
+          <span class="brand-link">patriotpubcrawl.guided-apps.com</span>
+        </a>
+        <a href="https://city-walks.com" target="_blank" rel="noopener" class="brand-card reveal reveal-delay-2">
+          <div class="brand-icon">🚶</div>
+          <h3>City Walks</h3>
+          <p>Self-guided walking tours through the world's most fascinating cities and neighborhoods.</p>
+          <span class="brand-link">city-walks.com</span>
+        </a>
+        <a href="https://brew-tours.com" target="_blank" rel="noopener" class="brand-card reveal reveal-delay-3">
+          <div class="brand-icon">🍻</div>
+          <h3>Brew Tours</h3>
+          <p>GPS-guided brewery trails that take you through the best craft beer scenes in town.</p>
+          <span class="brand-link">brew-tours.com</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Overview -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title reveal">The Platform Behind the Experiences</h2>
+      <p class="section-subtitle reveal reveal-delay-1">
+        Every Guided Apps experience is powered by the same robust platform — built for engagement, built to scale.
+      </p>
+      <div class="features-grid">
+        <div class="feature-card reveal reveal-delay-1">
+          <div class="feature-icon">📍</div>
+          <h3>GPS Navigation</h3>
+          <p>Turn-by-turn directions guide users between stops with real-time location tracking and distance indicators.</p>
+        </div>
+        <div class="feature-card reveal reveal-delay-2">
+          <div class="feature-icon">✅</div>
+          <h3>Auto Check-In</h3>
+          <p>Automatic proximity-based check-ins when users arrive at each stop — no QR codes or manual entry needed.</p>
+        </div>
+        <div class="feature-card reveal reveal-delay-3">
+          <div class="feature-icon">👥</div>
+          <h3>Group Features</h3>
+          <p>Create groups, track progress together, and see where your friends are on the trail in real time.</p>
+        </div>
+        <div class="feature-card reveal reveal-delay-1">
+          <div class="feature-icon">📱</div>
+          <h3>PWA Technology</h3>
+          <p>Works instantly in any mobile browser — no app store download required. Install to home screen for the full experience.</p>
+        </div>
+        <div class="feature-card reveal reveal-delay-2">
+          <div class="feature-icon">🛠️</div>
+          <h3>Manager Dashboard</h3>
+          <p>Content management tools let operators update stops, descriptions, photos, and trail routes on the fly.</p>
+        </div>
+        <div class="feature-card reveal reveal-delay-3">
+          <div class="feature-icon">📊</div>
+          <h3>Analytics</h3>
+          <p>Track completion rates, popular stops, group sizes, and engagement metrics to optimize your experience.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container text-center">
+      <h2 class="reveal">Ready to Build a Guided Experience?</h2>
+      <p class="reveal reveal-delay-1">
+        Whether you're a tourism board, hospitality group, or entrepreneur — we'll build a
+        custom GPS-guided tour for your city, event, or organization.
+      </p>
+      <a href="/contact" class="btn btn-primary reveal reveal-delay-2">Get in Touch</a>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  /* Hero */
+  .hero {
+    background: linear-gradient(135deg, var(--color-navy) 0%, #0d2137 100%);
+    color: white;
+    padding: 10rem 1.5rem 6rem;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 70% 50%, rgba(36, 113, 163, 0.3) 0%, transparent 60%);
+  }
+
+  .hero-inner {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    position: relative;
+    z-index: 1;
+  }
+
+  .hero-content {
+    flex: 1;
+  }
+
+  .hero-title {
+    color: white;
+    font-size: clamp(2.2rem, 5vw, 3.5rem);
+    margin-bottom: 1.5rem;
+    line-height: 1.15;
+  }
+
+  .hero-subtitle {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.2rem;
+    margin-bottom: 2.5rem;
+    max-width: 540px;
+  }
+
+  .hero-actions {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .hero-visual {
+    flex: 0 0 auto;
+  }
+
+  .hero-logo {
+    width: 280px;
+    height: auto;
+    filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.3));
+    animation: float 6s ease-in-out infinite;
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+  }
+
+  /* Brands */
+  .brands-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+
+  .brand-card {
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s ease;
+    display: block;
+    color: var(--color-text);
+  }
+
+  .brand-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
+    color: var(--color-text);
+  }
+
+  .brand-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .brand-card h3 {
+    margin-bottom: 0.75rem;
+  }
+
+  .brand-card p {
+    color: var(--color-gray);
+    font-size: 0.95rem;
+    margin: 0 auto 1rem;
+  }
+
+  .brand-link {
+    display: inline-block;
+    color: var(--color-blue);
+    font-size: 0.85rem;
+    font-weight: 500;
+  }
+
+  .brand-card:hover .brand-link {
+    color: var(--color-orange);
+  }
+
+  /* Features */
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+
+  .feature-card {
+    padding: 2rem;
+    border-radius: 12px;
+    border: 1px solid var(--color-gray-light);
+    transition: all 0.3s ease;
+  }
+
+  .feature-card:hover {
+    border-color: var(--color-blue-light);
+    box-shadow: 0 4px 20px rgba(36, 113, 163, 0.1);
+  }
+
+  .feature-icon {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .feature-card h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.15rem;
+  }
+
+  .feature-card p {
+    color: var(--color-gray);
+    font-size: 0.9rem;
+  }
+
+  /* CTA */
+  .cta-section {
+    background: linear-gradient(135deg, var(--color-blue) 0%, var(--color-navy) 100%);
+    color: white;
+    padding: 5rem 1.5rem;
+  }
+
+  .cta-section h2 {
+    color: white;
+    margin-bottom: 1rem;
+  }
+
+  .cta-section p {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 1.15rem;
+    max-width: 600px;
+    margin: 0 auto 2rem;
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    .hero-inner {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .hero-subtitle {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .hero-actions {
+      justify-content: center;
+    }
+
+    .hero-logo {
+      width: 200px;
+    }
+
+    .brands-grid,
+    .features-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

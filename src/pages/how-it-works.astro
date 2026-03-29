@@ -1,0 +1,252 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="How It Works" description="See how the Guided Apps platform powers GPS-driven tour experiences with navigation, auto check-ins, group features, and a manager dashboard.">
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="container text-center">
+      <h1>How It Works</h1>
+      <p>A look inside the platform that powers every Guided Apps experience.</p>
+    </div>
+  </section>
+
+  <!-- User Journey -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title reveal">The User Experience</h2>
+      <p class="section-subtitle reveal reveal-delay-1">
+        From opening the app to completing the trail — here's what your visitors experience.
+      </p>
+      <div class="journey-steps">
+        <div class="journey-step reveal reveal-delay-1">
+          <div class="step-number">1</div>
+          <div class="step-content">
+            <h3>Open & Start</h3>
+            <p>Users open the app in their mobile browser — no download needed. They choose a trail, create or join a group, and hit the trail.</p>
+          </div>
+        </div>
+        <div class="journey-step reveal reveal-delay-2">
+          <div class="step-number">2</div>
+          <div class="step-content">
+            <h3>Navigate with GPS</h3>
+            <p>Turn-by-turn directions guide users between stops. Real-time distance tracking shows how far they are from the next location.</p>
+          </div>
+        </div>
+        <div class="journey-step reveal reveal-delay-3">
+          <div class="step-number">3</div>
+          <div class="step-content">
+            <h3>Arrive & Check In</h3>
+            <p>When users reach a stop, GPS detects their arrival and automatically checks them in. They see stop details, history, tips, and more.</p>
+          </div>
+        </div>
+        <div class="journey-step reveal reveal-delay-4">
+          <div class="step-number">4</div>
+          <div class="step-content">
+            <h3>Complete the Trail</h3>
+            <p>Users progress through each stop, tracking their journey on the map. Complete all stops to finish the trail and earn completion status.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Platform Features -->
+  <section class="section-alt">
+    <div class="container">
+      <h2 class="section-title reveal">Platform Features</h2>
+      <p class="section-subtitle reveal reveal-delay-1">
+        Everything operators and users need, built into one platform.
+      </p>
+
+      <div class="features-detail">
+        <div class="feature-detail reveal">
+          <div class="feature-detail-icon">📍</div>
+          <div class="feature-detail-content">
+            <h3>GPS Navigation & Mapping</h3>
+            <p>Interactive maps with real-time user location, route visualization between stops, and distance/time estimates. Works offline once loaded.</p>
+          </div>
+        </div>
+
+        <div class="feature-detail reveal">
+          <div class="feature-detail-icon">✅</div>
+          <div class="feature-detail-content">
+            <h3>Proximity-Based Check-Ins</h3>
+            <p>No QR codes, no manual buttons. The app detects when a user arrives within range of a stop and checks them in automatically — verified by GPS.</p>
+          </div>
+        </div>
+
+        <div class="feature-detail reveal">
+          <div class="feature-detail-icon">👥</div>
+          <div class="feature-detail-content">
+            <h3>Group Management</h3>
+            <p>Users can create groups with invite codes, see where group members are, track collective progress, and move through the trail together or at their own pace.</p>
+          </div>
+        </div>
+
+        <div class="feature-detail reveal">
+          <div class="feature-detail-icon">📱</div>
+          <div class="feature-detail-content">
+            <h3>Progressive Web App</h3>
+            <p>Runs in any mobile browser and can be installed to the home screen for a native-like experience. No app store approval, no update friction.</p>
+          </div>
+        </div>
+
+        <div class="feature-detail reveal">
+          <div class="feature-detail-icon">🛠️</div>
+          <div class="feature-detail-content">
+            <h3>Manager Dashboard</h3>
+            <p>Operators get a full content management interface to add, edit, and reorder stops. Update descriptions, photos, hours, and tips — all live instantly.</p>
+          </div>
+        </div>
+
+        <div class="feature-detail reveal">
+          <div class="feature-detail-icon">📊</div>
+          <div class="feature-detail-content">
+            <h3>Analytics & Insights</h3>
+            <p>See how many users start your trail, which stops are most popular, average completion times, group sizes, and engagement patterns.</p>
+          </div>
+        </div>
+
+        <div class="feature-detail reveal">
+          <div class="feature-detail-icon">🎨</div>
+          <div class="feature-detail-content">
+            <h3>Custom Branding</h3>
+            <p>Each trail gets its own domain, color scheme, logo, and identity. Your experience, your brand — powered by our platform.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container text-center">
+      <h2 class="reveal">Want This for Your City?</h2>
+      <p class="reveal reveal-delay-1">
+        We'll build a custom guided experience tailored to your audience and location.
+      </p>
+      <a href="/contact" class="btn btn-primary reveal reveal-delay-2">Get in Touch</a>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .page-hero {
+    background: linear-gradient(135deg, var(--color-navy) 0%, #0d2137 100%);
+    color: white;
+    padding: 10rem 1.5rem 4rem;
+  }
+
+  .page-hero h1 {
+    color: white;
+    margin-bottom: 1rem;
+  }
+
+  .page-hero p {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  /* Journey Steps */
+  .journey-steps {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  .journey-step {
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-start;
+    padding: 2rem 0;
+    border-bottom: 1px solid var(--color-gray-light);
+  }
+
+  .journey-step:last-child {
+    border-bottom: none;
+  }
+
+  .step-number {
+    flex: 0 0 48px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: var(--color-orange);
+    color: white;
+    font-weight: 700;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .step-content h3 {
+    margin-bottom: 0.5rem;
+  }
+
+  .step-content p {
+    color: var(--color-gray);
+    font-size: 0.95rem;
+  }
+
+  /* Feature Details */
+  .features-detail {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .feature-detail {
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-start;
+    padding: 1.5rem;
+    background: white;
+    border-radius: 12px;
+    border: 1px solid var(--color-gray-light);
+    transition: all 0.3s ease;
+  }
+
+  .feature-detail:hover {
+    border-color: var(--color-blue-light);
+    box-shadow: 0 4px 20px rgba(36, 113, 163, 0.08);
+  }
+
+  .feature-detail-icon {
+    font-size: 2rem;
+    flex: 0 0 auto;
+  }
+
+  .feature-detail-content h3 {
+    margin-bottom: 0.4rem;
+    font-size: 1.1rem;
+  }
+
+  .feature-detail-content p {
+    color: var(--color-gray);
+    font-size: 0.9rem;
+  }
+
+  /* CTA */
+  .cta-section {
+    background: linear-gradient(135deg, var(--color-blue) 0%, var(--color-navy) 100%);
+    color: white;
+    padding: 5rem 1.5rem;
+  }
+
+  .cta-section h2 {
+    color: white;
+    margin-bottom: 1rem;
+  }
+
+  .cta-section p {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 1.15rem;
+    max-width: 600px;
+    margin: 0 auto 2rem;
+  }
+</style>
