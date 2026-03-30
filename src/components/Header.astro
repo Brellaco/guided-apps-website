@@ -150,18 +150,17 @@ const navLinks = [
     }
 
     .main-nav {
+      display: none;
       position: fixed;
       top: 72px;
       left: 0;
       right: 0;
       background: rgba(26, 58, 92, 0.98);
       padding: 1rem 0;
-      transform: translateY(-110%);
-      transition: transform 0.3s ease;
     }
 
     .main-nav.open {
-      transform: translateY(0);
+      display: block;
     }
 
     .main-nav ul {
