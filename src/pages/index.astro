@@ -31,23 +31,23 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         Each brand is a themed product line with its own identity — same powerful platform, different adventures.
       </p>
       <div class="brands-grid">
-        <a href="https://exploreadora.com" target="_blank" rel="noopener" class="brand-card reveal reveal-delay-1">
-          <img src="/explore-a-dora-logo.png" alt="Explore a DORA" class="brand-logo" />
-          <h3>Explore a DORA</h3>
-          <p>GPS-guided experiences through Ohio's Designated Outdoor Refreshment Areas. Same concept, different cities.</p>
-          <span class="brand-link">exploreadora.com</span>
-        </a>
-        <a href="https://city-walks.com" target="_blank" rel="noopener" class="brand-card reveal reveal-delay-2">
+        <a href="https://city-walks.com" target="_blank" rel="noopener" class="brand-card reveal reveal-delay-1">
           <img src="/city-walks-logo.png" alt="City Walks" class="brand-logo" />
           <h3>City Walks</h3>
           <p>Walking tours, historic sightseeing, and city exploration — focused on the journey, not the drinks.</p>
           <span class="brand-link">city-walks.com</span>
         </a>
-        <a href="https://brew-tours.com" target="_blank" rel="noopener" class="brand-card reveal reveal-delay-3">
+        <a href="https://brew-tours.com" target="_blank" rel="noopener" class="brand-card reveal reveal-delay-2">
           <img src="/brew-tours-logo.png" alt="Brew Tours" class="brand-logo" />
           <h3>Brew Tours</h3>
           <p>GPS-guided brewery trails that take you through the best craft beer scenes in town.</p>
           <span class="brand-link">brew-tours.com</span>
+        </a>
+        <a href="https://exploreadora.com" target="_blank" rel="noopener" class="brand-card reveal reveal-delay-3">
+          <img src="/explore-a-dora-logo.png" alt="Explore a DORA" class="brand-logo" />
+          <h3>Explore a DORA</h3>
+          <p>GPS-guided experiences through Ohio's Designated Outdoor Refreshment Areas. Same concept, different cities.</p>
+          <span class="brand-link">exploreadora.com</span>
         </a>
       </div>
     </div>
@@ -235,6 +235,12 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     object-fit: contain;
     margin: 0 auto 1.25rem;
     filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.2));
+    transition: transform 0.3s ease, filter 0.3s ease;
+  }
+
+  .brand-card:hover .brand-logo {
+    transform: translateY(-6px);
+    filter: drop-shadow(0 12px 20px rgba(0, 0, 0, 0.3));
   }
 
   .brand-logo-placeholder {
@@ -305,6 +311,12 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     object-fit: contain;
     flex: 0 0 auto;
     filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.2));
+    transition: transform 0.3s ease, filter 0.3s ease;
+  }
+
+  .experience-card:hover .experience-logo {
+    transform: translateY(-6px);
+    filter: drop-shadow(0 12px 20px rgba(0, 0, 0, 0.3));
   }
 
   .experience-content h3 {
