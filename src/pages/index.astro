@@ -28,27 +28,56 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     <div class="container">
       <h2 class="section-title reveal">Our Brands</h2>
       <p class="section-subtitle reveal reveal-delay-1">
-        Each brand delivers a unique guided experience — same powerful platform, different adventures.
+        Each brand is a themed product line with its own identity — same powerful platform, different adventures.
       </p>
       <div class="brands-grid">
-        <a href="https://patriotpubcrawl.guided-apps.com" target="_blank" rel="noopener" class="brand-card reveal reveal-delay-1">
-          <div class="brand-icon">🍺</div>
-          <h3>Patriot Pub Crawl</h3>
-          <p>Boston's Freedom Trail meets its best pubs, restaurants, and landmarks. Our flagship experience.</p>
-          <span class="brand-link">patriotpubcrawl.guided-apps.com</span>
+        <a href="https://exploreadora.com" target="_blank" rel="noopener" class="brand-card reveal reveal-delay-1">
+          <img src="/explore-a-dora-logo.png" alt="Explore a DORA" class="brand-logo" />
+          <h3>Explore a DORA</h3>
+          <p>GPS-guided experiences through Ohio's Designated Outdoor Refreshment Areas. Same concept, different cities.</p>
+          <span class="brand-link">exploreadora.com</span>
         </a>
         <a href="https://city-walks.com" target="_blank" rel="noopener" class="brand-card reveal reveal-delay-2">
-          <div class="brand-icon">🚶</div>
+          <img src="/city-walks-logo.png" alt="City Walks" class="brand-logo" />
           <h3>City Walks</h3>
-          <p>Self-guided walking tours through the world's most fascinating cities and neighborhoods.</p>
+          <p>Walking tours, historic sightseeing, and city exploration — focused on the journey, not the drinks.</p>
           <span class="brand-link">city-walks.com</span>
         </a>
         <a href="https://brew-tours.com" target="_blank" rel="noopener" class="brand-card reveal reveal-delay-3">
-          <div class="brand-icon">🍻</div>
+          <div class="brand-logo-placeholder">Coming Soon</div>
           <h3>Brew Tours</h3>
           <p>GPS-guided brewery trails that take you through the best craft beer scenes in town.</p>
           <span class="brand-link">brew-tours.com</span>
         </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experiences -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title reveal">Featured Experiences</h2>
+      <p class="section-subtitle reveal reveal-delay-1">
+        Individual GPS-guided tours built on the Guided Apps platform.
+      </p>
+      <div class="experiences-grid">
+        <a href="https://patriotpubcrawl.guided-apps.com" target="_blank" rel="noopener" class="experience-card reveal reveal-delay-1">
+          <img src="/patriot-pub-crawl-logo.png" alt="Patriot Pub Crawl" class="experience-logo" />
+          <div class="experience-content">
+            <h3>Patriot Pub Crawl</h3>
+            <p>Boston's Freedom Trail meets its best pubs, restaurants, and landmarks. Our flagship experience.</p>
+            <span class="experience-link">patriotpubcrawl.guided-apps.com</span>
+            <span class="experience-badge live">Live</span>
+          </div>
+        </a>
+        <div class="experience-card reveal reveal-delay-2">
+          <img src="/cincinnati-streetcar-sips-and-suds-logo.png" alt="Cincinnati Streetcar Sips & Suds" class="experience-logo" />
+          <div class="experience-content">
+            <h3>Cincinnati Streetcar Sips & Suds</h3>
+            <p>Ride the Cincinnati streetcar line through the city's best bars and breweries.</p>
+            <span class="experience-badge coming-soon">Coming Soon</span>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -200,9 +229,25 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     color: var(--color-text);
   }
 
-  .brand-icon {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
+  .brand-logo {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    margin: 0 auto 1rem;
+  }
+
+  .brand-logo-placeholder {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 1rem;
+    border-radius: 50%;
+    background: var(--color-gray-light);
+    color: var(--color-gray);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.85rem;
+    font-weight: 600;
   }
 
   .brand-card h3 {
@@ -223,6 +268,79 @@ import BaseLayout from '../layouts/BaseLayout.astro';
   }
 
   .brand-card:hover .brand-link {
+    color: var(--color-orange);
+  }
+
+  /* Experiences */
+  .experiences-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  .experience-card {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.06);
+    border: 1px solid var(--color-gray-light);
+    transition: all 0.3s ease;
+    color: var(--color-text);
+  }
+
+  a.experience-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    border-color: var(--color-blue-light);
+    color: var(--color-text);
+  }
+
+  .experience-logo {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    flex: 0 0 auto;
+  }
+
+  .experience-content h3 {
+    margin-bottom: 0.4rem;
+    font-size: 1.1rem;
+  }
+
+  .experience-content p {
+    color: var(--color-gray);
+    font-size: 0.9rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .experience-link {
+    display: inline-block;
+    color: var(--color-blue);
+    font-size: 0.85rem;
+    font-weight: 500;
+    margin-right: 0.75rem;
+  }
+
+  .experience-badge {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding: 0.2rem 0.6rem;
+    border-radius: 4px;
+  }
+
+  .experience-badge.live {
+    background: rgba(93, 170, 59, 0.15);
+    color: var(--color-green);
+  }
+
+  .experience-badge.coming-soon {
+    background: rgba(230, 126, 34, 0.15);
     color: var(--color-orange);
   }
 
@@ -300,8 +418,14 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     }
 
     .brands-grid,
-    .features-grid {
+    .features-grid,
+    .experiences-grid {
       grid-template-columns: 1fr;
+    }
+
+    .experience-card {
+      flex-direction: column;
+      text-align: center;
     }
   }
 </style>

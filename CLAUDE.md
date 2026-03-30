@@ -11,12 +11,18 @@ Corporate/marketing website for Guided Applications at `guided-apps.com`. A broc
 - **Language:** TypeScript (strict)
 - **Output:** Static HTML/CSS/JS
 
-## Brands
+## Brands & Experiences
 
-- **Guided Applications** — the parent platform (guided-apps.com)
-- **Patriot Pub Crawl** — flagship product, Boston Freedom Trail pub crawl (patriotpubcrawl.guided-apps.com)
-- **City Walks** — walking tour brand (city-walks.com)
-- **Brew Tours** — brewery tour brand (brew-tours.com)
+See [brand-hierarchy.md](brand-hierarchy.md) for the full breakdown.
+
+**Brands** — themed product lines with their own domains:
+- **Explore a DORA** (exploreadora.com) — Ohio DORA district experiences
+- **City Walks** (city-walks.com) — walking tours, historic sightseeing, city exploration
+- **Brew Tours** (brew-tours.com) — brewery trails (branding WIP)
+
+**Experiences** — individual tours, subdomains of a brand or the platform:
+- **Patriot Pub Crawl** (patriotpubcrawl.guided-apps.com) — Boston Freedom Trail pub crawl (live)
+- **Cincinnati Streetcar Sips & Suds** — coming soon
 
 ## Deployment
 
